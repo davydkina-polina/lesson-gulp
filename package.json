@@ -1,0 +1,25 @@
+{
+  "name": "lesson-gulp",
+  "version": "1.0.0",
+  "description": "This project is about GULP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davydkina-polina/lesson-gulp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davydkina-polina/lesson-gulp/issues"
+  },
+  "homepage": "https://github.com/davydkina-polina/lesson-gulp#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.1"
+  }
+}
