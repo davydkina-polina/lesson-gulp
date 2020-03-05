@@ -4,7 +4,7 @@ const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
 
 // Static server
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', () => {
   browserSync.init({
       server: {
           baseDir: "./"
