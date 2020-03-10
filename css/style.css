@@ -318,7 +318,7 @@ template {
   display: none; }
 
 .button {
-  padding: 13px 20px;
+  padding: 11px 24px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
@@ -336,6 +336,9 @@ template {
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff; }
+
+button.button.hero__button.button--outline {
+  padding: 18px 45px; }
 
 .container {
   width: 85%;
@@ -382,6 +385,7 @@ body {
   align-items: center; }
 
 .logo {
+  font-size: 1.07rem;
   color: #E3B873;
   text-transform: uppercase; }
 
@@ -389,7 +393,7 @@ body {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  margin-right: 2.857143rem;
+  margin-right: 2.65rem;
   transition: color 0.2; }
   .nav__item:hover {
     color: #E3B873; }
@@ -424,9 +428,13 @@ body {
     margin-left: 4.285714rem; }
   .hero__text {
     font-size: 1.571429rem;
-    max-width: 500px; }
+    line-height: 133%;
+    max-width: 500px;
+    margin: 0;
+    margin-bottom: 3.3rem; }
   .hero__button {
-    margin-right: 20px; }
+    margin-right: 18px;
+    padding: 18px 28px; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -445,7 +453,10 @@ body {
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    font-family: 'Yeseva One', cursive;
+    font-size: 12px;
+    font-weight: 200; }
     .hero__scroll-down::after {
       content: '';
       background: url("../../img/hero-vector.svg") no-repeat center;
@@ -467,19 +478,21 @@ body {
     text-decoration: none;
     color: #E3B873;
     transform: rotate(90deg);
-    line-height: 0.8; }
+    line-height: 0.8;
+    font-size: 1.05rem; }
     .instagram__link::after {
       content: '';
       width: 50px;
       height: 1px;
       background: #E3B873;
-      margin-left: 8px; }
+      margin-left: 15px; }
 
 .title {
-  margin: 0;
+  margin: 0 0 1.2rem 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 2.857143rem; }
+  font-size: 2.857143rem;
+  line-height: 1.35; }
   .title--primary {
     color: #E3B873; }
 
