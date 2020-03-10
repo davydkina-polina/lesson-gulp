@@ -321,7 +321,8 @@ template {
   padding: 13px 20px;
   border: none;
   border-radius: 2px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 0.93rem; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
@@ -344,9 +345,12 @@ template {
 *, *:before, *:after {
   box-sizing: border-box; }
 
+html {
+  font-size: 14px; }
+
 body {
   font-family: 'Futura Book', sans-serif;
-  font-size: 14px; }
+  font-size: 1rem; }
 
 .section-title {
   text-align: center;
@@ -385,7 +389,7 @@ body {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  margin-right: 40px;
+  margin-right: 2.857143rem;
   transition: color 0.2; }
   .nav__item:hover {
     color: #E3B873; }
@@ -403,7 +407,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding-top: 100px;
-  padding-left: 80px;
+  padding-left: 0px;
   color: #fff;
   position: relative; }
   .hero::before {
@@ -416,9 +420,10 @@ body {
     background: rgba(19, 19, 19, 0.7); }
   .hero__content {
     position: relative;
-    max-width: 670px; }
+    max-width: 47.857143rem;
+    margin-left: 4.285714rem; }
   .hero__text {
-    font-size: 22px;
+    font-size: 1.571429rem;
     max-width: 500px; }
   .hero__button {
     margin-right: 20px; }
@@ -435,8 +440,8 @@ body {
     align-items: center;
     bottom: 0;
     left: 0;
-    min-width: 247px;
-    min-height: 97px;
+    min-width: 17.642857rem;
+    min-height: 6.928571rem;
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
@@ -474,6 +479,43 @@ body {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 40px; }
+  font-size: 2.857143rem; }
   .title--primary {
     color: #E3B873; }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px; }
+  .nav__item {
+    margin-left: 1rem; } }
+
+@media screen and (max-width: 992px) {
+  .nav {
+    display: none; }
+  .hero__instagram {
+    display: none; }
+  .hero__content {
+    margin: 0; } }
+
+@media screen and (max-width: 570px) {
+  .contacts__phone {
+    margin-right: 0;
+    text-decoration: none;
+    color: #fff; }
+  .contacts__button {
+    display: none; }
+  .title {
+    font-size: 1.642857rem; }
+  .hero__scroll-down {
+    display: none; }
+  .hero__text {
+    font-size: 1.285714rem;
+    margin-bottom: 2.285714rem; }
+  .hero__button {
+    display: block;
+    width: 22.857143rem;
+    margin-bottom: 1.857143rem; } }
+
+@media screen and (max-height: 520px) {
+  .hero__scroll-down {
+    display: none; } }
