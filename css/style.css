@@ -398,6 +398,9 @@ body {
   .nav__item:hover {
     color: #E3B873; }
 
+.item--last {
+  margin: 0; }
+
 .phone {
   color: #E3B873; }
 
@@ -500,7 +503,8 @@ body {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-left: 1rem; } }
+    margin-left: 0rem;
+    margin-right: 1.6rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
