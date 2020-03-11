@@ -679,3 +679,11 @@ img {
 @media screen and (max-width: 375px) {
   .hero__button {
     width: 20rem; } }
+
+@media screen and (max-width: 360px) {
+  .container {
+    width: 28rem; }
+  .hero__content {
+    padding-left: 0.9rem; }
+  .hero__button {
+    width: 28rem; } }
