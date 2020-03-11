@@ -13,6 +13,27 @@
    display: none
   &__content
    margin: 0
+@media screen and (max-width: 760px)
+ .row
+  flex-direction: column
+  align-items: center
+ .types
+  &__card
+   margin-bottom: 5rem
+ .card
+  &__text
+   margin-left: 0
+  &__pricetag
+   text-align: center
+   box-shadow: 5px 5px 10px 4px rgba(227, 184, 115, 0.3)
+ .design
+  &__bg
+   margin-top: -180rem
+   height: 185rem
+  &__section-title
+   color: $light
+  &__section-text
+   color: $light
 @media screen and (max-width: 570px)
  .contacts
   &__phone
@@ -22,20 +43,58 @@
   &__button
    display: none
  .title
-  font-size: 1.642857rem
+  font-size: 1.92rem
  .hero
-  // &__content
-  //  font-size: 22.857143rem
+  &__content
+     padding-left: 3rem
   &__scroll-down
    display: none
   &__text
-   font-size: 1.285714rem
-   margin-bottom: 2.285714rem
+   font-size: 1.5rem
+   margin-bottom: 3rem
+   max-width: 26.666667rem
   &__button
    display: block
-   width: 22.857143rem 
-   margin-bottom: 1.857143rem
+   width: 28.3rem
+   margin-bottom: 1rem
+ .button
+  font-size: 1.1rem
+ button.button.hero__button.button--outline
+  margin-top: 2.3rem
+ .types
+  &__section-title
+   font-size: 1.2rem
+  &__card
+   max-width: 28.5rem
+   margin-top: 1.3rem
+ .card
+  &__text
+   max-width: 22.5rem
+   margin-top: -12.3rem
+  &__pricetag
+   padding: 1.3rem 2.6rem
+ .design
+  &__section-title
+   font-size: 1.2rem
+  &__section-text
+   font-size: 1.2rem
+   line-height: 1.8rem
+   max-width: 24.166667rem
+  &__card
+   max-width: 28.5rem
+   margin-top: 0rem
+  &__pricetag
+     padding: 1.3rem 5.6rem 1.3rem 2.6rem
+  &__bg
+   margin-top: -165rem
+   height: 175rem
+
 @media screen and (max-height: 520px)
  .hero
   &__scroll-down
    display: none
+
+@media screen and (max-width: 375px)
+ .hero  
+  &__button
+   width: 20rem  
