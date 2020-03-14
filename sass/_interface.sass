@@ -20,3 +20,36 @@
   
 button.button.hero__button.button--outline
  padding: 18px 45px
+
+.label
+ font-size: 1.1rem
+ &--light
+  color: rgba($light, 0.5)
+.input
+ background: transparent
+ border: none
+ border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+ font-size: 1.3rem
+ color: $light
+ padding: 0.5rem
+ &::placeholder
+  color: $light
+.policy
+ &__checkbox
+  opacity: 0
+  visibility: hidden
+  &:checked +
+    .policy__label
+      &::before
+        background: $primary url(../img/checkbox.svg) no-repeat center / 0.8rem
+ &__label
+  display: flex
+  align-items: center
+  &::before
+   content: ''
+   height: 18px
+   width: 18px
+   border: 1px solid $primary
+   border-radius: 1px
+   cursor: pointer
+   margin-right: 0.7rem
