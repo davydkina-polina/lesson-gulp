@@ -70,9 +70,10 @@
  .card
   &__text
    max-width: 22.5rem
-   margin-top: -12.3rem
+   margin-top: -12.38rem
   &__pricetag
-   padding: 1.3rem 2.6rem
+   padding: 1rem 2.7rem
+   bottom: -1.5rem
  .design
   &__section-title
    font-size: 1.2rem
@@ -82,28 +83,50 @@
    max-width: 24.166667rem
   &__card
    max-width: 28.5rem
-   margin-top: 0rem
+   margin-top: -0.7rem
   &__pricetag
-     padding: 1.3rem 5.6rem 1.3rem 2.6rem
+   //   padding: 1.3rem 5.6rem 1.3rem 2.6rem
+   padding: 1rem 3.6rem 1rem 4rem
+   bottom: -1rem
   &__bg
    margin-top: -165rem
    height: 175rem
-
+ .section
+  &-title__heading
+   font-size: 1.85rem
 @media screen and (max-height: 520px)
  .hero
   &__scroll-down
    display: none
 
-@media screen and (max-width: 375px)
- .hero  
-  &__button
-   width: 20rem  
+// media screen and (max-width: 375px)
+//  .hero  
+//   &__button
+//    width: 20rem  
 
-@media screen and (max-width: 360px)
+@media screen and (max-width: 375px)
  .container
   width: 28rem
  .hero
   &__content
-   padding-left: 0.9rem
+   padding-left: 1.4rem
   &__button
    width: 28rem
+ .card
+  &__text
+   margin-top: -12rem
+ .design__card .card__text
+  padding: 1.785714rem 2.5rem 1.4rem 2.5rem
+ .design
+  &__pricetag
+   bottom: -1.5rem
+  
+ 
+@media screen and (max-width: 320px)
+ .container
+  width: 85%
+ .hero  
+  &__content
+   padding-left: 2rem
+  &__button
+   width: 20rem  

@@ -364,6 +364,8 @@ img {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive; }
+    .section-title__heading {
+      font-size: 1.44rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -426,7 +428,7 @@ img {
     justify-content: center;
     width: 100%;
     padding-left: 4.285714rem;
-    background: #131313 url(../../img/hero-bg.jpg) no-repeat center/cover; }
+    background: #131313 url(../img/hero-bg.jpg) no-repeat center/cover; }
     .hero__content::before {
       content: '';
       position: absolute;
@@ -470,7 +472,7 @@ img {
     font-weight: 200; }
     .hero__scroll-down::after {
       content: '';
-      background: url("../../img/hero-vector.svg") no-repeat center;
+      background: url("../img/hero-vector.svg") no-repeat center;
       width: 30px;
       height: 30px;
       border: 2px solid #E3B873;
@@ -573,8 +575,6 @@ img {
 
 .design__pricetag {
   padding: 1.23rem 5.6rem 1.23rem 2.6rem; }
-  .design__pricetag--last {
-    bottom: -2.7rem; }
 
 .design__bg {
   position: absolute;
@@ -654,9 +654,10 @@ img {
     margin-top: 1.3rem; }
   .card__text {
     max-width: 22.5rem;
-    margin-top: -12.3rem; }
+    margin-top: -12.38rem; }
   .card__pricetag {
-    padding: 1.3rem 2.6rem; }
+    padding: 1rem 2.7rem;
+    bottom: -1.5rem; }
   .design__section-title {
     font-size: 1.2rem; }
   .design__section-text {
@@ -665,25 +666,38 @@ img {
     max-width: 24.166667rem; }
   .design__card {
     max-width: 28.5rem;
-    margin-top: 0rem; }
+    margin-top: -0.7rem; }
   .design__pricetag {
-    padding: 1.3rem 5.6rem 1.3rem 2.6rem; }
+    padding: 1rem 3.6rem 1rem 4rem;
+    bottom: -1rem; }
   .design__bg {
     margin-top: -165rem;
-    height: 175rem; } }
+    height: 175rem; }
+  .section-title__heading {
+    font-size: 1.85rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
     display: none; } }
 
 @media screen and (max-width: 375px) {
-  .hero__button {
-    width: 20rem; } }
-
-@media screen and (max-width: 360px) {
   .container {
     width: 28rem; }
   .hero__content {
-    padding-left: 0.9rem; }
+    padding-left: 1.4rem; }
   .hero__button {
-    width: 28rem; } }
+    width: 28rem; }
+  .card__text {
+    margin-top: -12rem; }
+  .design__card .card__text {
+    padding: 1.785714rem 2.5rem 1.4rem 2.5rem; }
+  .design__pricetag {
+    bottom: -1.5rem; } }
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 85%; }
+  .hero__content {
+    padding-left: 2rem; }
+  .hero__button {
+    width: 20rem; } }
