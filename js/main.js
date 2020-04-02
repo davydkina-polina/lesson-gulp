@@ -1,4 +1,21 @@
 $(document).ready( function(){
+  
+  //  кнопка наверх
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) { 
+      // определяет текущее вертикальное положение полосы прокрутки и если оно становится больше 100 px, то кнопка появляется
+    $('.scrollup').fadeIn();
+    } else {
+    $('.scrollup').fadeOut();
+    }
+    });
+     
+    $('.scrollup').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    // 0 - значит страница будет прокручена вверх до самого начала до нулевого пикселя, а 600 - это скорость анимации в миллисекундах
+    return false;
+    });
+
  var modal = $('.modal'),
      modalBtn = $('[data-toggle=modal]'),
      closeBtn = $('.modal__close');
@@ -23,10 +40,12 @@ $(document).ready( function(){
       modal.css("display", "flex");
      });
 
-     window.on('click', function () {
-      // modal.css("display", "none");
-      modal.toggleClass('modal--visible');
-     });
+    //  window.on('click', function () {
+    //   // modal.css("display", "none");
+    //   modal.toggleClass('modal--visible');
+    //  });
+
+    
      
   //    $(document).click(function(e){
   //     if ($(e.target).parents().filter('.modal:visible').length != 1 && !$(e.target).hasClass('[data-toggle=modal]')) {
